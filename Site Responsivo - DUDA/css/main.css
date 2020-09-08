@@ -12,12 +12,20 @@ h1, h2, h3 {
     font-weight: 700;
 }
 
+h1 {
+ color: #000;
+font-size: 18px;
+ border-bottom: 3px solid #000;
+}
+
 .botao{
     color: #f1f1f1;
     text-decoration: none;
     padding: 10px 30px;
     background-color: #4d4d4d;
-    font-size: .9em;
+   width: 150px;
+
+    font-size: .8em;
     border-radius: 5px;
     border: 2px solid #000000 ;
 
@@ -90,7 +98,7 @@ nav ul li a {
 /*Cabeçalho*/
 
 header {
-     background-image: url('../img/fundo1.jpg');
+     background-image: url('../img/fundo1alt.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -100,13 +108,16 @@ header {
     align-items: center;
     text-align: center;
     padding: 20px;
-    height: 250px;
+    height: 200px;
     border: 3px solid #000000;
     
 }
 
 header p {
-    margin-bottom: 2em;
+    margin-bottom: 50px;
+    font-size: 13px;
+    color: #000000;
+
 
 
 }
@@ -116,12 +127,14 @@ header a:hover{
 }
 
 
+
 /*SOBRE*/
 
 #sobre {
     background-image: url('../img/duda.jpg');
+    
     background-repeat: no-repeat;
-  
+    
     display: flex;
     flex-direction: column;
   
@@ -135,7 +148,12 @@ header a:hover{
 
 }
 
+#sobre h2{
+    margin-left: 550px;
+}
+
 #sobre p {
+    margin-left: 0px;;
     margin-bottom: 2.5em;
     max-width: 1000px;
 }
@@ -144,12 +162,17 @@ header a:hover{
 
 }
 
-/* #sobre .button{ 
+
+ #sobre a.botao{ 
+    margin-left: 0px;
+    background-color: #000000;
+    
+}
+
+#sobre a.botao:hover{
     background-color: #f1f1f1;
-    color: #4d4d4d;
-}*/
-
-
+    color: #000;
+} 
 
 /* SERVIÇOS */
 
@@ -239,7 +262,7 @@ header a:hover{
 #contato {
 
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     text-align: center;
     padding: 20px;
@@ -255,6 +278,63 @@ header a:hover{
     #contato a{
         color: #f1f1f1;
     }
+
+    #contato {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 1100px;
+        height: 180px;
+        margin: 0 auto;
+        background-color: #1f1f1f;
+        align-items: center;
+    }
+    .cwpp{
+        margin-bottom: 5px;
+        padding-left: 0px;
+        margin-left: 35px;
+        
+    }
+    .cwpp a{
+        font-size:10px;
+       
+        
+    }
+    .px #pxx {
+        font-size: 10px;
+      width: 0px;
+      margin-top: 10px;
+
+    }
+    .px {
+        margin-left: 15px;
+    }
+  
+
+    #contato h2{
+        width: 100%;
+        color: #f1f1f1;
+        top: 0px;
+    }
+
+    #contato p {
+        padding-bottom: 40px;
+        width: 100%;
+        color: #f1f1f1;
+       margin-bottom: 0px;
+    }
+    #contato a{
+        color: #f1f1f1;
+        
+    }
+    .px img{
+        width: 30px;
+    }
+
+    .cwpp img{
+        width: 35px;
+    }
+
 
 /*FOOTER*/
 
@@ -304,19 +384,45 @@ footer {
         
     }
 
-   
+    .botao{
+        color: #f1f1f1;
+        text-decoration: none;
+        padding: 10px 30px;
+        background-color: #4d4d4d;
+        width: 250px;
+        font-size: .9em;
+        border-radius: 5px;
+        border: 2px solid #000000 ;
+    
+    }
     
     
 
 
     /* CABEÇALHO */
 /* 60 */
-    header {        
-        height: 600px;          
-        height: 60vh;
+    header {  
+              
+        height: 60vh;          
+        
         justify-content: center;
         border: 4px solid #000000;
     }
+
+    header p {
+        
+        font-size: 20px;
+        color: #000000;
+    
+    
+    
+    }
+     header h1 {
+      
+        color: #000;
+        font-size: 30px;
+        border-bottom: 3px solid #000;
+       }
 
     /* SOBRE */
 
@@ -331,14 +437,25 @@ footer {
     }¨
 
     #sobre h2{
-        width: 100%;
-        align-items: center;
+        margin-top: 20px;
+        margin-left: 550px;
+      
     }
 
+    #sobre p {
+        margin-left: 550px;;
+        margin-bottom: 2.5em;
+        max-width: 1000px;
+    }
     #sobre img {
         width: 100%;
     }
 
+    #sobre a.botao{ 
+        margin-left: 550px;
+        background-color: #000000;
+        
+    }
     /* SERVIÇOS */
 
     #serviços {
@@ -440,6 +557,11 @@ footer {
    
     /* CONTATO */
 
+/* CONTATO */
+
+
+
+    
     #contato {
         flex-direction: row;
         flex-wrap: wrap;
@@ -451,14 +573,27 @@ footer {
         align-items: center;
     }
     .cwpp{
+        padding-right: 45px;
+        width: 90;
         padding-left: 80px;
+        margin-bottom: 0px;
     }
-    
+    .cwpp a{
+        font-size:15px;
+    }
     .px #pxx {
+        font-size: 14px;
+        width: 10px;
       margin-top: 10px;
 
     }
 
+    .px img{
+        width: 50px;
+    }
+    .cwpp img{
+        width: 50px;
+    }
     #contato h2{
         width: 100%;
         color: #f1f1f1;
@@ -466,6 +601,7 @@ footer {
     }
 
     #contato p {
+        padding-bottom: 5px;
         width: 100%;
         color: #f1f1f1;
        margin-bottom: 25px;
