@@ -1,0 +1,137 @@
+/*Height 100%*/
+html, body {height: 100%;}
+.bloco {min-height: 100%; padding-top:94px;}
+
+/*COLORS */
+.blue-logo {background-color: #078d95}
+
+
+
+/*Logo*/
+.logo_text {font-size: 0; margin:0;}
+.logo_img {width: 270px; margin-top: 34px}
+
+/*MENU*/
+.nav-color {background-color: rgba(0,0,0,0.7); transition: background 0.5s linear}
+/*HOME*/
+.home {animation: mudarimg 20s infinite ;background-image: url('../img/revestimentos2alt.jpg'); background-repeat: no-repeat;
+background-size: cover;}
+
+
+
+.banner h2 {font-size: 2.2rem; font-weight: 900; text-transform: uppercase;}
+.banner p {font-size: 1.7rem; line-height: 1.8rem;}
+
+/*Home - ANIMATION*/
+@keyframes mudarimg {
+	40% {background-image: url('../img/revestimentos1alt.jpg');}
+	80% {background-image: url('../img/revestimentos5.jpg');}
+	100% {background-image: url('../img/revestimento6.jpeg');}
+}
+
+/*SOBRE*/
+.sobre {background-image: url('../img/textura1.png'); box-shadow: 1px 1px 60px #000}
+.sobre h2 {font-size: 2.3rem; color: #212121; text-transform: uppercase; padding-bottom: 30px;}
+.sobre h2::after {content: ''; display: block; width:100px; border-top: 4px solid #078d95;
+margin: 15px auto;}
+.sobre p {line-height: 1.8rem; text-align: justify;}
+
+/*Porfolio*/
+
+
+.portfolio {background-image: url('../img/fundoport.png');}
+.portfolio h2 {font-size: 2.3rem; text-transform: uppercase;  color: #f1f1f1; text-align: center;}
+.portfolio h2::after{content: ''; display:block; width: 100px; border-top: 4px solid  #078d95;
+margin: 15px auto;}
+.portfolio p {line-height: 1.8rem;font-size: 1.1rem;  color: #f1f1f1; text-align: center; margin-top: 25px;}
+#port:hover, #port1:hover, #port2:hover, #port3:hover, #port4:hover, #port5:hover, #port6:hover,
+#port7:hover, #port8:hover, #port9:hover, #port10:hover, #port11:hover, #port12:hover, #port13:hover
+, #port14:hover, #port15:hover, #port16:hover, #port17:hover
+, #port18:hover, #port20:hover, #port21:hover, #port22:hover, #port23:hover, #port24:hover
+, #port25:hover, #port26:hover
+, #port27:hover, #port28:hover, #port29:hover, #port30:hover, #port31:hover, #port32:hover
+, #port33:hover, #port34:hover, #port19:hover, #port36:hover{ transform: scale(1.03333333333); filter: grayscale(100%);}
+
+/*CONTATO*/
+.contato {background-image: url('../img/textura1.png'); }
+.contato h2 {font-size: 2.3rem; text-transform: uppercase; display: block; }
+.contato h2::after{content: ''; display: block; width: 100px; margin: 15px auto; border-top: 4px solid #078d95;}
+.contato .informacoes{background-image: url(../img/textura2.png); min-height: 450px; padding:30px; text-align:  center;}
+.contato .informacoes a  {margin: 20px 8px;}
+.contato .informacoes h4 {font-size: 1.5rem; font-weight: 900; text-transform: uppercase; padding-top: 80px;}
+.contato .informacoes p {font-size: 1.0rem; font-weight: 800; padding-top: 10px;}
+.contato .formulario {background-image: url('../img/textura1.png'); min-height: 250px; padding-right: 30px; }
+.contato .formulario {min-height: 250px; }
+
+
+/*RODAPE*/
+.rodape {background-color: #000; min-height: 100px;}
+.rodape p {}
+
+/*CUSTOM*/
+nav ul a:hover {font-size: 1.4rem;  border-bottom: 4px  solid #078d95; color:#078d95; }
+
+
+
+nav.nav-extended .nav-wrapper {
+  min-height: 95px;
+
+}
+
+
+.navbar-fixed {
+
+  position: absolute;
+  height: 95px;
+ 
+}
+nav{ background-color: #000;}
+
+nav, nav i,
+nav [class^="mdi-"], nav [class*="mdi-"],
+nav i.material-icons, nav a .sidenav-trigger {
+ 
+  height: 95px;
+  line-height: 95px;
+
+}
+
+
+.sidenav {
+background: url('../img/textura2.png');
+}
+.sidenav li>a {
+    color: #f1f1f1;
+  
+    font-weight: : 100px;
+   
+}
+.carousel {box-shadow: 1px 1px 15px #000}
+
+
+
+
+
+/*Media*/
+@media only screen and (max-width: 480px) {
+.sobre .carousel a img {min-height: 300px; background-size: cover;}
+.logo_img {width: 190px;}
+.banner p {font-size: 1.4rem;}
+.rodape {min-height: 122px;}
+
+}
+
+@media only screen and (min-width: 601px) {
+.sobre .carousel a img {min-height: 350px; background-size: cover;}
+ .banner {padding-top: 4.5rem;} 
+ .banner h2 {font-size: 2.6rem;}
+ .container {width: 90%}
+}
+
+@media only screen and (min-width: 993px) {
+  .sobre .carousel a img {min-height: 400px; background-size: cover;}
+	 .banner {padding-top: 5rem;}	
+	 .banner h2 {font-size: 3rem;}
+  .container {width: 85%}
+  
+}
